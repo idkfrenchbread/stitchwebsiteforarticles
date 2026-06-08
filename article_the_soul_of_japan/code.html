@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Washoku: The Soul of Japan | EPICURE</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "error-container": "#ffdad6",
+                    "on-primary": "#ffffff",
+                    "tertiary-container": "#1a1c1c",
+                    "on-secondary-fixed-variant": "#464747",
+                    "on-error-container": "#93000a",
+                    "surface-container": "#eeeeee",
+                    "on-surface-variant": "#4c4546",
+                    "on-tertiary-fixed-variant": "#454747",
+                    "primary-fixed-dim": "#c6c6c6",
+                    "outline-variant": "#cfc4c5",
+                    "secondary-fixed": "#e3e2e2",
+                    "primary-container": "#1b1b1b",
+                    "inverse-surface": "#2f3131",
+                    "outline": "#7e7576",
+                    "surface-container-highest": "#e2e2e2",
+                    "tertiary-fixed-dim": "#c6c6c7",
+                    "inverse-on-surface": "#f0f1f1",
+                    "on-secondary": "#ffffff",
+                    "background": "#f9f9f9",
+                    "on-surface": "#1a1c1c",
+                    "primary-fixed": "#e2e2e2",
+                    "inverse-primary": "#c6c6c6",
+                    "on-background": "#1a1c1c",
+                    "on-primary-container": "#848484",
+                    "surface-container-low": "#f3f3f4",
+                    "surface-bright": "#f9f9f9",
+                    "surface-variant": "#e2e2e2",
+                    "surface-container-high": "#e8e8e8",
+                    "on-primary-fixed-variant": "#474747",
+                    "secondary-container": "#e3e2e2",
+                    "on-secondary-fixed": "#1b1c1c",
+                    "on-secondary-container": "#646464",
+                    "surface-dim": "#dadada",
+                    "secondary": "#5e5e5e",
+                    "on-tertiary-container": "#838484",
+                    "on-tertiary-fixed": "#1a1c1c",
+                    "tertiary-fixed": "#e2e2e2",
+                    "on-error": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "error": "#ba1a1a",
+                    "surface": "#f9f9f9",
+                    "tertiary": "#000000",
+                    "secondary-fixed-dim": "#c7c6c6",
+                    "primary": "#000000",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-fixed": "#1b1b1b",
+                    "surface-tint": "#5e5e5e"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "stack-lg": "64px",
+                    "stack-md": "24px",
+                    "article-max": "720px",
+                    "gutter": "32px",
+                    "stack-sm": "8px",
+                    "stack-xl": "120px",
+                    "margin-mobile": "20px",
+                    "container-max": "1280px"
+            },
+            "fontFamily": {
+                    "display-lg-mobile": ["Playfair Display"],
+                    "caption": ["Inter"],
+                    "body-md": ["Inter"],
+                    "display-lg": ["Playfair Display"],
+                    "body-lg": ["Inter"],
+                    "headline-lg": ["Playfair Display"],
+                    "label-caps": ["Inter"],
+                    "headline-md": ["Playfair Display"]
+            },
+            "fontSize": {
+                    "display-lg-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "caption": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "26px", "fontWeight": "400"}],
+                    "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["20px", {"lineHeight": "32px", "fontWeight": "400"}],
+                    "headline-lg": ["48px", {"lineHeight": "56px", "fontWeight": "600"}],
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        ::selection {
+            background-color: #1b1b1b;
+            color: #ffffff;
+        }
+        body {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 w-full z-50 bg-surface border-b border-outline-variant">
+<nav class="flex justify-between items-center px-gutter py-4 max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md font-bold tracking-tighter text-primary">EPICURE</div>
+<div class="hidden md:flex space-x-8 items-center">
+<a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors duration-200" href="#">Regions</a>
+<a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors duration-200" href="#">Chefs</a>
+<a class="font-body-md text-body-md text-primary border-b-2 border-primary pb-1" href="#">Culinary Arts</a>
+</div>
+<div class="flex items-center gap-6">
+<div class="hidden md:block">
+<span class="material-symbols-outlined cursor-pointer text-secondary hover:text-primary">search</span>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 font-label-caps text-label-caps tracking-widest uppercase transition-opacity active:opacity-70">
+                    Subscribe
+                </button>
+</div>
+</nav>
+</header>
+<!-- Leaderboard Ad Space -->
+<div class="mt-24 mb-12 flex justify-center px-gutter">
+<div class="w-[970px] h-[250px] bg-surface-container-low border-none flex items-center justify-center text-on-surface-variant font-label-caps">
+<span class="opacity-40">ADVERTISEMENT</span>
+</div>
+</div>
+<!-- Main Content Area -->
+<main class="max-w-container-max mx-auto px-gutter grid grid-cols-1 lg:grid-cols-12 gap-12 pb-stack-xl">
+<!-- Reader View / Article Content -->
+<article class="lg:col-span-8 lg:col-start-1">
+<!-- Category Label -->
+<div class="font-label-caps text-label-caps text-secondary mb-4 uppercase tracking-widest">
+                Cuisine Culture · 12 Min Read
+            </div>
+<!-- Header Section -->
+<header class="mb-stack-lg">
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-6 leading-tight">
+                    Washoku: The Soul of Japan
+                </h1>
+<p class="font-body-lg text-body-lg text-secondary leading-relaxed border-l-2 border-primary pl-6">
+                    How precision and seasonal reverence define a nation's palate.
+                </p>
+<!-- Author & Date -->
+<div class="mt-8 flex items-center gap-4 text-secondary font-caption text-caption border-t border-outline-variant pt-4">
+<span class="font-bold text-on-surface">By Kenjiro Sato</span>
+<span>•</span>
+<span>November 14, 2024</span>
+</div>
+</header>
+<!-- Hero Image -->
+<figure class="mb-stack-md">
+<img alt="Washoku presentation" class="w-full aspect-video object-cover grayscale-[0.2]" data-alt="A meticulously arranged Japanese Kaiseki tray on a dark wooden table, showcasing a variety of small ceramic dishes containing seasonal delicacies. The lighting is soft and directional, highlighting the textures of fresh sashimi, pickled vegetables, and a steaming bowl of dashi. The composition is balanced and minimalist, reflecting the elegant and tranquil aesthetic of high-end Japanese dining culture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKh447RYl-31GXE-lin-vYLi2SLrW74Ls5xc_RHqJP6fqikF4d0W1fYI451qYxnRhuv5QlgiXtgsCL5ou8IHI5wMbfM1bSz0O4gfQdP6N2IqwuQcDPYyWmVQzODHTPfzk20sSWDE1R-AZ-YGrp0Fionh0mNVvlKT_WJCL5aGuDuFQ7xQlO_zutzrXF0mv5k6z2ti1VW43NmKJ-YclE6l5ig2Uh2-_VTLk-D3bYANpWzDSdPkYad3yBZPMZj-Ifs3wWeJeV7L0m75-P"/>
+<figcaption class="mt-3 text-caption font-caption text-secondary italic">
+                    The harmony of colors and textures in a traditional Kaiseki presentation. Photography by Yuki Tanaka.
+                </figcaption>
+</figure>
+<!-- Long Form Text -->
+<section class="max-w-article-max mx-auto space-y-stack-md text-on-surface">
+<p class="font-body-md text-body-md leading-relaxed first-letter:text-7xl first-letter:font-display-lg first-letter:mr-3 first-letter:float-left first-letter:leading-none">
+                    Washoku, literally translated as "food of Japan," is more than a culinary tradition; it is a philosophy recognized by UNESCO as an Intangible Cultural Heritage. It represents a profound respect for nature and a commitment to the sustainable use of biological resources. In the heart of Tokyo’s most revered kitchens, this philosophy manifests as an unwavering obsession with the seasons.
+                </p>
+<p class="font-body-md text-body-md leading-relaxed">
+                    At its core, Washoku is built upon the principle of <i>shun</i>—the moment when an ingredient is at its absolute peak of flavor. For a chef practicing Washoku, a bamboo shoot is not just a vegetable; it is a fleeting messenger of spring, to be prepared with a light touch that honors its brief existence.
+                </p>
+<!-- Chef Insight Box (Quote) -->
+<div class="my-stack-lg p-10 bg-surface-container-low border-l-4 border-primary italic">
+<span class="material-symbols-outlined text-primary text-4xl mb-4" data-weight="fill">format_quote</span>
+<blockquote class="font-display-lg text-[28px] leading-tight text-on-surface mb-6">
+                        "Umami is the silent vibration of the soul. It is not a loud flavor, but a deep resonance that connects the sea, the land, and the human spirit through a single drop of dashi."
+                    </blockquote>
+<cite class="font-label-caps text-label-caps text-secondary not-italic uppercase tracking-widest">— Chef Hiroshi Yamamoto, 3-Star Michelin Master</cite>
+</div>
+<h2 class="font-headline-md text-headline-md mt-stack-lg mb-6">The Trinity of Balance</h2>
+<p class="font-body-md text-body-md leading-relaxed">
+                    The structural foundation of a typical meal follows the <i>ichiju sansai</i> rule: one soup and three sides, accompanied by rice and pickles. This balance ensures a spectrum of nutrients and textures, preventing any single element from overwhelming the palate.
+                </p>
+<ul class="space-y-4 my-8">
+<li class="flex items-start gap-4 pb-4 border-b border-outline-variant">
+<span class="font-label-caps text-label-caps bg-primary text-on-primary px-2 py-1">01</span>
+<div>
+<strong class="font-bold">Suimono:</strong> A clear soup that cleanses the palate and introduces the primary dashi profile.
+                        </div>
+</li>
+<li class="flex items-start gap-4 pb-4 border-b border-outline-variant">
+<span class="font-label-caps text-label-caps bg-primary text-on-primary px-2 py-1">02</span>
+<div>
+<strong class="font-bold">Ozukuri:</strong> Slices of raw seasonal fish, served with fresh wasabi to emphasize purity.
+                        </div>
+</li>
+<li class="flex items-start gap-4">
+<span class="font-label-caps text-label-caps bg-primary text-on-primary px-2 py-1">03</span>
+<div>
+<strong class="font-bold">Yakimono:</strong> Grilled elements, often charcoal-fired to add a subtle smokiness without masking the inherent flavors.
+                        </div>
+</li>
+</ul>
+<p class="font-body-md text-body-md leading-relaxed">
+                    Beyond the plate, the choice of vessel is equally critical. A lacquerware bowl for miso soup is chosen for its warmth against the palms, while a rough-hewn ceramic plate for grilled fish might evoke the rugged coastline of the Noto Peninsula.
+                </p>
+<hr class="w-24 border-t-2 border-primary mx-auto my-stack-lg"/>
+<p class="font-body-md text-body-md leading-relaxed">
+                    To understand Washoku is to understand the Japanese soul—a quiet, disciplined reverence for the world around us. In an era of globalized fast food, these ancient practices offer a sanctuary of mindfulness, one bite at a time.
+                </p>
+</section>
+<!-- Tags Section -->
+<div class="mt-stack-lg flex flex-wrap gap-2">
+<span class="bg-surface-container-high px-3 py-1 font-label-caps text-[10px] uppercase">Japan</span>
+<span class="bg-surface-container-high px-3 py-1 font-label-caps text-[10px] uppercase">Philosophy</span>
+<span class="bg-surface-container-high px-3 py-1 font-label-caps text-[10px] uppercase">Culinary Arts</span>
+<span class="bg-surface-container-high px-3 py-1 font-label-caps text-[10px] uppercase">Washoku</span>
+</div>
+</article>
+<!-- Sidebar / Skyscraper Ad -->
+<aside class="lg:col-span-4 lg:block hidden">
+<div class="sticky top-24 space-y-stack-md">
+<!-- Skyscraper Ad -->
+<div class="w-[300px] h-[600px] bg-surface-container-low border border-outline-variant mx-auto flex flex-col items-center justify-center p-6 text-center">
+<span class="font-label-caps text-caption text-secondary opacity-40 mb-auto">ADVERTISEMENT</span>
+<div class="my-auto">
+<h4 class="font-headline-md text-on-surface mb-2">Master the Art of Dashi</h4>
+<p class="font-caption text-secondary mb-6">Join our exclusive masterclass with Tokyo's top chefs.</p>
+<button class="w-full border border-primary py-3 font-label-caps text-label-caps hover:bg-primary hover:text-on-primary transition-all">Learn More</button>
+</div>
+<span class="mt-auto opacity-0">.</span>
+</div>
+<!-- Related Content Cards -->
+<div class="pt-stack-md border-t border-outline-variant">
+<h3 class="font-label-caps text-label-caps mb-6 uppercase tracking-widest">Recommended</h3>
+<div class="space-y-8">
+<a class="group block" href="#">
+<img alt="Sushi craft" class="w-full aspect-square object-cover mb-3" data-alt="A close-up of a chef's hand precisely slicing a piece of bluefin tuna on a traditional wooden cutting board. The scene is bright and clean, with a focus on the sharp steel of the knife and the vibrant red texture of the fish. The atmosphere is professional and clinical, typical of a high-end sushi kitchen." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGVXTRwPVnzyGxtUWnLUUQntap2n8fFypbcbUCDeUWCDsth9J5zqRpGfH8QPLXyd2XDqSbyiG0NwZbaKWhFUJHANWR5wOsC7sKiDZPDzt9ykCsUYeBpvK9HzyiMWgzsCdVICl-lomN2yp6-C9DdlIGjCUAWwAZWsYM5UGbeMDWXl4P8IbdFr3HP_fPsc62DbCIJe-a3OyrNw1SpIxW9MHHq6550gxMNDhu8cAAsGGM5qhzxxiWg9mVaBpBnpZf-I-48aKAgf9uCM0I"/>
+<span class="font-label-caps text-[10px] text-secondary uppercase">Technique</span>
+<h4 class="font-display-lg text-body-lg leading-tight group-hover:underline">The Geometry of Nigiri</h4>
+</a>
+<a class="group block" href="#">
+<img alt="Tea ceremony" class="w-full aspect-square object-cover mb-3" data-alt="A serene scene of a traditional Japanese tea ceremony, featuring a bamboo whisk and a bowl of bright green matcha on a tatami mat. Soft natural light filters through paper shoji screens, creating a peaceful and meditative mood with a palette of greens, wood tones, and neutrals." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAacBmoPGEFNAor0AagQlgXhQizBp3s3BXXaa9SjXFa20l19Up0I9jzIuVrRPIOiMa_R-sApxiTKCa2-OdiQ6S9LXFE2bAlbl3jq1lOLGlrsatLrMlPFhZFwhwYq58PPu8PY0hrd-99KJDvR3Y4RkfQjccYvinNrWTngqW1B1Xo97hrRZ0YMiQAVdRtnAYVmbkB90jfcHp7yRh1Qy18wlFRU5oPqSQcXQXZlYW3iCCv2CX3kiUHFiDPyjYdua3icbku6Pm1TgEAsJX2"/>
+<span class="font-label-caps text-[10px] text-secondary uppercase">Tradition</span>
+<h4 class="font-display-lg text-body-lg leading-tight group-hover:underline">Beyond the Leaf: Tea Rites</h4>
+</a>
+</div>
+</div>
+</div>
+</aside>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low border-t border-outline-variant w-full py-stack-xl">
+<div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-stack-md">
+<div>
+<div class="font-headline-md text-headline-md text-primary mb-4">EPICURE</div>
+<p class="font-body-md text-on-secondary-container max-w-sm mb-8">
+                    Curation and commentary for the modern palate. Exploring the intersections of culture, history, and the culinary arts.
+                </p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors">language</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors">rss_feed</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors">mail</span>
+</div>
+</div>
+<div class="flex flex-col md:items-end justify-between">
+<nav class="flex flex-wrap gap-x-8 gap-y-4 md:justify-end font-caption text-caption uppercase tracking-wider">
+<a class="text-secondary hover:text-primary transition-colors" href="#">About</a>
+<a class="text-secondary hover:text-primary transition-colors" href="#">Careers</a>
+<a class="text-secondary hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="text-secondary hover:text-primary transition-colors" href="#">Contact</a>
+<a class="text-primary underline" href="#">Newsletter</a>
+</nav>
+<div class="mt-8 font-caption text-caption text-secondary">
+                    © 2024 Epicure Editorial. All rights reserved.
+                </div>
+</div>
+</div>
+</footer>
+<!-- Reading Progress Bar -->
+<div class="fixed top-0 left-0 h-1 bg-primary z-[60] transition-all duration-150" id="progress-bar" style="width: 0%"></div>
+<script>
+        // Micro-interaction: Reading Progress
+        window.onscroll = function() {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winScroll / height) * 100;
+            document.getElementById("progress-bar").style.width = scrolled + "%";
+        };
+
+        // Micro-interaction: Sticky Nav Shadow on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 10) {
+                header.classList.add('shadow-sm');
+            } else {
+                header.classList.remove('shadow-sm');
+            }
+        });
+    </script>
+</body></html>

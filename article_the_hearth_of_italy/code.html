@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Hearth of Italy | EPICURE</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;family=Inter:wght@400;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Playfair+Display:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "error-container": "#ffdad6",
+                    "on-primary": "#ffffff",
+                    "tertiary-container": "#1a1c1c",
+                    "on-secondary-fixed-variant": "#464747",
+                    "on-error-container": "#93000a",
+                    "surface-container": "#eeeeee",
+                    "on-surface-variant": "#4c4546",
+                    "on-tertiary-fixed-variant": "#454747",
+                    "primary-fixed-dim": "#c6c6c6",
+                    "outline-variant": "#cfc4c5",
+                    "secondary-fixed": "#e3e2e2",
+                    "primary-container": "#1b1b1b",
+                    "inverse-surface": "#2f3131",
+                    "outline": "#7e7576",
+                    "surface-container-highest": "#e2e2e2",
+                    "tertiary-fixed-dim": "#c6c6c7",
+                    "inverse-on-surface": "#f0f1f1",
+                    "on-secondary": "#ffffff",
+                    "background": "#f9f9f9",
+                    "on-surface": "#1a1c1c",
+                    "primary-fixed": "#e2e2e2",
+                    "inverse-primary": "#c6c6c6",
+                    "on-background": "#1a1c1c",
+                    "on-primary-container": "#848484",
+                    "surface-container-low": "#f3f3f4",
+                    "surface-bright": "#f9f9f9",
+                    "surface-variant": "#e2e2e2",
+                    "surface-container-high": "#e8e8e8",
+                    "on-primary-fixed-variant": "#474747",
+                    "secondary-container": "#e3e2e2",
+                    "on-secondary-fixed": "#1b1c1c",
+                    "on-secondary-container": "#646464",
+                    "surface-dim": "#dadada",
+                    "secondary": "#5e5e5e",
+                    "on-tertiary-container": "#838484",
+                    "on-tertiary-fixed": "#1a1c1c",
+                    "tertiary-fixed": "#e2e2e2",
+                    "on-error": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "error": "#ba1a1a",
+                    "surface": "#f9f9f9",
+                    "tertiary": "#000000",
+                    "secondary-fixed-dim": "#c7c6c6",
+                    "primary": "#000000",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-fixed": "#1b1b1b",
+                    "surface-tint": "#5e5e5e"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "stack-lg": "64px",
+                    "stack-md": "24px",
+                    "article-max": "720px",
+                    "gutter": "32px",
+                    "stack-sm": "8px",
+                    "stack-xl": "120px",
+                    "margin-mobile": "20px",
+                    "container-max": "1280px"
+            },
+            "fontFamily": {
+                    "display-lg-mobile": ["Playfair Display"],
+                    "caption": ["Inter"],
+                    "body-md": ["Inter"],
+                    "display-lg": ["Playfair Display"],
+                    "body-lg": ["Inter"],
+                    "headline-lg": ["Playfair Display"],
+                    "label-caps": ["Inter"],
+                    "headline-md": ["Playfair Display"]
+            },
+            "fontSize": {
+                    "display-lg-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "caption": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "26px", "fontWeight": "400"}],
+                    "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["20px", {"lineHeight": "32px", "fontWeight": "400"}],
+                    "headline-lg": ["48px", {"lineHeight": "56px", "fontWeight": "600"}],
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        body {
+            background-color: #f9f9f9;
+            color: #1a1c1c;
+            -webkit-font-smoothing: antialiased;
+        }
+        .reader-view {
+            max-width: 720px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        hr {
+            border: 0;
+            border-top: 1px solid #cfc4c5;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface dark:bg-surface border-b border-outline-variant dark:border-outline">
+<nav class="flex justify-between items-center px-gutter py-4 max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md font-bold tracking-tighter text-primary dark:text-on-surface cursor-pointer active:opacity-70 transition-opacity">
+                EPICURE
+            </div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-body-md text-body-md text-secondary dark:text-on-secondary-container hover:text-primary dark:hover:text-on-surface transition-colors duration-200 cursor-pointer" href="#">Regions</a>
+<a class="font-body-md text-body-md text-secondary dark:text-on-secondary-container hover:text-primary dark:hover:text-on-surface transition-colors duration-200 cursor-pointer" href="#">Chefs</a>
+<a class="font-body-md text-body-md text-secondary dark:text-on-secondary-container hover:text-primary dark:hover:text-on-surface transition-colors duration-200 cursor-pointer" href="#">Culinary Arts</a>
+</div>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined cursor-pointer text-primary">search</span>
+<button class="bg-primary text-on-primary px-6 py-2 font-label-caps text-label-caps transition-opacity active:opacity-70">
+                    Subscribe
+                </button>
+</div>
+</nav>
+</header>
+<main class="pt-[100px] pb-stack-xl">
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-gutter mb-stack-lg">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-stack-md items-end">
+<div class="lg:col-span-8">
+<p class="font-label-caps text-label-caps text-primary mb-4">LONG READ / CULINARY HERITAGE</p>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6">
+                        The Hearth of Italy
+                    </h1>
+<p class="font-body-lg text-body-lg text-secondary max-w-2xl">
+                        From the rolling hills of Tuscany to the coasts of Sicily, we explore the profound connection between soil, soul, and the kitchen table.
+                    </p>
+</div>
+<div class="lg:col-span-4 flex flex-col items-start lg:items-end gap-2 pb-2">
+<p class="font-caption text-caption text-secondary">Words by Elena Rossi</p>
+<p class="font-caption text-caption text-secondary">Photography by Marco Valenti</p>
+</div>
+</div>
+</section>
+<!-- Hero Image -->
+<section class="w-full mb-stack-lg px-gutter max-w-container-max mx-auto">
+<img alt="Italian table spread" class="w-full aspect-[21/9] object-cover" data-alt="A sun-drenched, rustic outdoor table in a Tuscan vineyard setting, laden with authentic Italian regional specialties like crusty sourdough bread, deep green olive oil in a ceramic bowl, and vine-ripened tomatoes. The lighting is golden-hour soft, highlighting the textures of raw linen and ancient stone. The composition is clean and minimalist, emphasizing the 'Slow Food' philosophy through natural elements and a muted, sophisticated color palette of ochre, sage, and cream." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpT7XGeiHMEvdMrl_JaFB7ZMyNtuEpnxgdeY9V2J-YzFlfOyQ-fKaqz13LK0XtXgiYWZOdniOquCpnw6Odxu_sJAvTUYbrQypfGPn8mynyBNcDiYWl_67SBi7oVzQbbV60mTXgdTQmizbzyV2nQuGQw-f_EOA7K8_2XiaBJO5fH-brwQtB_yashKQkWFNewyzxtIK_8NxSWULqpSbh0snff5_I8_hEY7tJIvmJb6McgjJTI2KsmJ5cwFkc-DNWeDmejiq_htsrnspQ"/>
+</section>
+<!-- Article Content -->
+<article class="reader-view px-margin-mobile md:px-0">
+<div class="space-y-stack-md">
+<p class="font-body-lg text-body-lg first-letter:text-6xl first-letter:font-display-lg first-letter:mr-3 first-letter:float-left first-letter:leading-none">
+                    In an era defined by industrial speed, the Italian kitchen remains a sanctuary of patience. It is here that the Slow Food movement, born in the heart of Bra in 1986, found its most fertile ground. This is not merely a method of cooking; it is a resistance against the homogenization of flavor.
+                </p>
+<h2 class="font-headline-md text-headline-md mt-stack-lg">The Altar of Locality</h2>
+<p class="font-body-md text-body-md">
+                    To understand the Italian hearth is to understand the specificity of the <i>terroir</i>. In the north, the focus is on the richness of the plains—creamy risottos finished with butter that tastes of mountain alpine grass. In the south, the sun dictates a sharper profile: the acidity of Pachino tomatoes and the liquid gold of cold-pressed Sicilian oils.
+                </p>
+<div class="py-stack-md">
+<blockquote class="border-l-2 border-primary pl-8 py-2">
+<p class="font-headline-md text-headline-md italic text-primary">
+                            "The table is where we remember who we are. Every ingredient is a story of a grandmother’s hand and a farmer’s toil."
+                        </p>
+</blockquote>
+</div>
+<p class="font-body-md text-body-md">
+                    The adoration of local ingredients manifests in the ritual of the morning market. It is a sensory dialogue between the producer and the consumer, where the choice of a specific variety of artichoke or the age of a Pecorino Toscano is a matter of profound cultural significance.
+                </p>
+</div>
+<!-- Inline Ad Banner -->
+<div class="my-stack-lg bg-[#F5F5F5] h-[250px] flex flex-col items-center justify-center border border-outline-variant">
+<p class="font-label-caps text-[10px] text-secondary mb-4">ADVERTISEMENT</p>
+<div class="text-center">
+<p class="font-headline-md text-headline-md text-on-surface-variant">The Artisanal Collection</p>
+<p class="font-body-md text-body-md text-secondary">Curated tools for the modern enthusiast.</p>
+<button class="mt-4 border border-primary px-8 py-2 font-label-caps text-label-caps hover:bg-primary hover:text-on-primary transition-colors">SHOP NOW</button>
+</div>
+</div>
+<div class="space-y-stack-md">
+<h2 class="font-headline-md text-headline-md">Regional Echoes</h2>
+<p class="font-body-md text-body-md">
+                    Each region operates like a sovereign culinary state. Liguria offers the herbaceous perfume of pesto, strictly pounded in a marble mortar. Emilia-Romagna provides the structural integrity of Parmigiano Reggiano, aged for thirty-six months until it crumbles into crystalline perfection.
+                </p>
+<!-- Bento Grid of Specialties -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 py-stack-md">
+<div class="relative group cursor-pointer overflow-hidden">
+<img class="aspect-square object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Close-up macro photography of aged Parmigiano Reggiano cheese, showing its crystalline, crumbly texture and pale gold hue. The lighting is dramatic and moody, casting soft shadows that emphasize the irregular edges of the cheese. The style is high-end editorial, evoking a sense of heritage and luxury through minimalist framing and extreme detail." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEj_i_KCBAiNopEBFx-Ulu7yqMoXhdIevawQcTt1n4NHKAsNZ0jFm3is6e9Cs-f-52fuDTULiAbTNIV-iHRCAdWDwDVt67JduTLychD9sUmrkAJR4RQE_yXeERC73PiwKczj-ZY7h7UdyELmPjR7luP7ti9xXyKx98k6n7kQYozxADsQvxBJj25204MmiEyDeoI-5w9TQuW5ZzVaSrW1zFukQavuW0GaCXKn3ks_9Ont-9GWot7wBCHNzT_OwKTSKne_0E_biNtgrj"/>
+<div class="absolute bottom-4 left-4 bg-white/90 p-3">
+<p class="font-label-caps text-label-caps text-primary">EMILIA-ROMAGNA</p>
+<p class="font-body-md text-body-md font-bold">Parmigiano Reggiano</p>
+</div>
+</div>
+<div class="relative group cursor-pointer overflow-hidden">
+<img class="aspect-square object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Vibrant, deep green basil pesto being prepared in a traditional white marble mortar and pestle. Hand-harvested pine nuts and shards of hard cheese are visible. The scene is lit with bright, natural daylight that captures the fresh, herbaceous essence of the ingredients against a clean, minimalist background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2xn2CyXXCZEOkwi3KPGEHMDBKIkIyU_6Hdc8vVrRRSzDfeRC6-RVdmvxLl7vJ4xlkEQFqoumRAPV_WVHVDMj3bZRw9BnNDdtsmhxKTM9yZLyEalJ16CklWHbFdOedW39D5WzWgj34rbif5bZVAc-9Q66YR4FDZD0iyk5nFBYwt_3oxmXX3qkWp7KoSOxpwWDi9mIMAOie5v-2aSPPMMLBqZY7RYREf68KBgY788i46oVGTPdkObJW9n8omR2ZsYrucHmzzROQogmG"/>
+<div class="absolute bottom-4 left-4 bg-white/90 p-3">
+<p class="font-label-caps text-label-caps text-primary">LIGURIA</p>
+<p class="font-body-md text-body-md font-bold">Basilico Genovese</p>
+</div>
+</div>
+</div>
+<p class="font-body-md text-body-md">
+                    Ultimately, the hearth of Italy is not a place, but a state of mind. It is the refusal to accept the mediocre and the insistence that a meal is a conversation—not just with those at the table, but with the land itself.
+                </p>
+<hr class="my-stack-lg"/>
+<!-- Tags -->
+<div class="flex flex-wrap gap-2">
+<span class="bg-surface-container-high px-3 py-1 font-label-caps text-label-caps">SLOW FOOD</span>
+<span class="bg-surface-container-high px-3 py-1 font-label-caps text-label-caps">TUSCANY</span>
+<span class="bg-surface-container-high px-3 py-1 font-label-caps text-label-caps">INGREDIENTS</span>
+<span class="bg-surface-container-high px-3 py-1 font-label-caps text-label-caps">ITALY</span>
+</div>
+</div>
+</article>
+<!-- Newsletter Section -->
+<section class="max-w-container-max mx-auto px-gutter mt-stack-xl">
+<div class="bg-surface-container-low p-stack-lg flex flex-col items-center text-center">
+<h3 class="font-headline-md text-headline-md mb-4">The Epicure Dispatches</h3>
+<p class="font-body-md text-body-md text-secondary mb-8 max-w-md">Weekly curated stories from the world's finest kitchens, delivered directly to your inbox.</p>
+<form class="flex flex-col md:flex-row w-full max-w-lg gap-4">
+<input class="flex-grow bg-transparent border-0 border-b border-primary focus:ring-0 focus:border-b-2 font-body-md px-0 py-2 placeholder:text-outline" placeholder="Email Address" type="email"/>
+<button class="bg-primary text-on-primary px-10 py-3 font-label-caps text-label-caps">JOIN</button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-stack-xl bg-surface-container-low dark:bg-tertiary-container border-t border-outline-variant dark:border-outline">
+<div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-stack-md">
+<div>
+<div class="font-headline-md text-headline-md text-primary dark:text-on-surface mb-4">EPICURE</div>
+<p class="font-caption text-caption text-secondary dark:text-on-secondary-container">© 2024 Epicure Editorial. All rights reserved.</p>
+</div>
+<div class="flex flex-col md:items-end gap-2">
+<div class="flex gap-6">
+<a class="font-caption text-caption text-secondary dark:text-on-secondary-container hover:text-primary dark:hover:text-on-surface transition-colors duration-200" href="#">About</a>
+<a class="font-caption text-caption text-secondary dark:text-on-secondary-container hover:text-primary dark:hover:text-on-surface transition-colors duration-200" href="#">Careers</a>
+<a class="font-caption text-caption text-secondary dark:text-on-secondary-container hover:text-primary dark:hover:text-on-surface transition-colors duration-200" href="#">Privacy Policy</a>
+</div>
+<div class="flex gap-6 mt-4">
+<a class="font-caption text-caption text-secondary dark:text-on-secondary-container hover:text-primary dark:hover:text-on-surface transition-colors duration-200" href="#">Contact</a>
+<a class="font-caption text-caption text-secondary dark:text-on-secondary-container hover:text-primary dark:hover:text-on-surface transition-colors duration-200" href="#">Newsletter</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interactions for header visibility
+        let lastScrollTop = 0;
+        const header = document.querySelector('header');
+        
+        window.addEventListener('scroll', () => {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop && scrollTop > 100) {
+                header.style.transform = 'translateY(-100%)';
+                header.style.transition = 'transform 0.3s ease-in-out';
+            } else {
+                header.style.transform = 'translateY(0)';
+            }
+            lastScrollTop = scrollTop;
+        });
+
+        // Simple smooth scroll for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body></html>
